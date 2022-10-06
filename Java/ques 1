@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.util.*; 
+public class MyClass { 
+public static void main(String[] args) { 
+//code to read values 
+//code to display the result 
+Scanner input = new Scanner(System.in);
+int n , rev=0; 
+n = input.nextInt();
+while(n!=0){ 
+int rem = n % 10; 
+rev = rev * 10 + rem; 
+n = n / 10; }
+System.out.println("Reverse of the number is " +rev);
+} 
+};
